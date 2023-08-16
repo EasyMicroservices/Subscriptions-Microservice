@@ -17,8 +17,8 @@ namespace EasyMicroservices.SubscriptionsMicroservice
 
         public void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseInMemoryDatabase("SubscriptionDatabase");
-            //optionsBuilder.UseSqlServer(config.GetConnectionString("local"));
+            //optionsBuilder.UseInMemoryDatabase("SubscriptionDatabase");
+            optionsBuilder.UseSqlServer(config.GetConnectionString("local"));
         }
     }
 }

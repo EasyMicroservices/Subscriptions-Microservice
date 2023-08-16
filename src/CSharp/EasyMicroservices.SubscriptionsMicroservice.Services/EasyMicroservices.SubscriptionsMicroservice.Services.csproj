@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>EasyMicroservices.SubscriptionsMicroservice</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyMicroservices.SubscriptionsMicroservice.Logics\EasyMicroservices.SubscriptionsMicroservice.Logics.csproj" />
+  </ItemGroup>
+
+</Project>

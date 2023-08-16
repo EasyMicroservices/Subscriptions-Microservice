@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>EasyMicroservices.SubscriptionsMicroservice</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Database\Documents\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+	  <PackageReference Include="EasyMicroservices.Configuration" Version="0.0.0.2" />
+	  <PackageReference Include="EasyMicroservices.Cores.Relational.EntityFrameworkCore" Version="0.0.0.7" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\EasyMicroservices.SubscriptionsMicroservice.Domain\EasyMicroservices.SubscriptionsMicroservice.Domain.csproj" />
+  </ItemGroup>
+  
+</Project>
